@@ -4,18 +4,19 @@ var fs = require('fs');
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  var buffer = fs.readFileSync('index.html');
-  response.send(buffer.toString('utf-8'));
+  response.sendfile("index.html");
+});
+
+app.get('/:doc', function(request, response) {
+  response.sendfile(request.params.doc);
 });
 
 app.get('/css/:doc',function(request, response) {
-  var buffer = fs.readFileSync('css/' + request.params.doc);
-  response.send(buffer.toString('utf-8'));
+  response.sendfile('css/' + request.params.doc);
 });
 
 app.get('/scripts/:doc',function(request, response) {
-  var buffer = fs.readFileSync('scripts/' + request.params.doc);
-  response.send(buffer.toString('utf-8'));
+  response.sendfile('scripts/' + request.params.doc);
 });
 
 var port = process.env.PORT || 8080;
