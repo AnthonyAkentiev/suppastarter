@@ -15,6 +15,10 @@
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
           rel="stylesheet" type="text/css">
 
+     <!-- http://fortawesome.github.io/Font-Awesome -->
+     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
     <style type="text/css">
 
       /* Large desktop */
@@ -55,8 +59,8 @@
       }
       p.lead {
         padding-top: 1.5%;
-        font-size: 24px;
-        line-height: 30px;
+        font-size: 16px;
+        line-height: 24px;
       }
       p {
         font-size: 18px;
@@ -127,28 +131,61 @@
       </div>
     </div>
 
-    <!-- We use row-fluid inside containers to achieve a resizable layout. -->
-    <!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
-    <!-- http://stackoverflow.com/a/12270322 -->
     <div class="container">
-      <!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
-      <!-- www.google.com/fonts/specimen/Ubuntu -->
-      <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
       <div class="row-fluid heading">
         <div class="span12">
-          <h1>Moogle Fridge</h1>
+          <img class="img-logo" src="pics/logo.png">
         </div>
       </div> 
       <div class="row-fluid subheading">
         <div class="span12">
-          <!-- Special typography from Bootstrap for lead paragraph. -->
-          <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-          <p class="lead">fridge that talks</p>
+          <p class="lead">Fridge that talks with you ... and can take pictures of you with a glass of milk</p>
         </div>
       </div>
-      <div class="row-fluid pitch">
-        <div class="span5 offset1 video">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
+
+      <div class="row-fluid section2">
+        <div class="span5 offset1 copy copy-right">
+
+         <div class="col-lg-6">
+               <div id="features" class="row">
+                   <div class="col-lg-12">
+                       <h2 class="text-center">Features</h2>
+                   </div>
+               </div>
+             <div class="row">
+                 <div class="col-12">
+                     <h4><i class="icon-cogs"></i><strong>
+                         Only simple and dumb design</strong></h4>
+
+                     <p>We spend all money on logics and programming. Great product doesn't need any "cool" or "kinky" design.</p>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="col-12">
+                     <h4><i class="icon-tags"></i><strong>Content organization
+                         by tags and categories. Search quickly for green peas inside!</strong></h4>
+
+                     <p>Moogle Fridge offers its users two types of content organization: in the form of a tree data structure
+                         with categories or the second option is simply by using tags. Use the one you prefer or both methods
+                         at the same time.</p>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="col-12">
+                     <h4><i class="icon-search"></i><strong>Built-in voice search</strong></h4>
+
+                     <p>There is a full-text search available. Just say "OK, fridge" and it is ready for action!</p>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="col-12">
+                     <h4><i class="icon-download-alt"></i><strong>
+                         Instant import</strong></h4>
+
+                     <p>Found something useful on the internet that you'd like to eat? Import food instantly to your Moogle Fridge.</p>
+                 </div>
+             </div>
+          </div>
         </div>
 
         <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
@@ -160,17 +197,17 @@
                 different in horizontal and vertical layouts, illustrating
                 media queries. -->
                 <div class="linediv-l">
-                <h3>1000</h3> <p>backers</p>
+                <h3>0</h3> <p>backers</p>
                 </div>
               </div>
               <div class="span4">
                 <div class="linediv-c">
-                  <h3>$6000</h3> <p>of $10,000</p>
+                  <h3>$0</h3> <p>of $10,000</p>
                 </div>
               </div>
               <div class="span4">
                 <div class="linediv-r">
-                <h3>10</h3> <p>days left</p>
+                <h3>150</h3> <p>days left</p>
                 </div>
               </div>
             </div>
@@ -179,8 +216,8 @@
             <!-- Bootstrap progress bar -->
             <!-- http://twitter.github.io/bootstrap/components.html#progress -->
             <div class="thermometer progress active">
-              <div class="bar bar-success" style="width: 60%;"></div>
-              <div class="bar bar-warning" style="width: 40%;"></div>
+              <div class="bar bar-success" style="width: 0%;"></div>
+              <div class="bar bar-warning" style="width: 100%;"></div>
             </div>
           </div>
           <div class="span6 offset3 order">
