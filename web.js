@@ -40,6 +40,24 @@ app.get('/tests/lib/jasmine-1.3.1/:doc',function(request, response) {
   response.sendfile('tests/lib/jasmine-1.3.1/' + request.params.doc);
 });
 
+// Comming soon
+app.get('/coming-soon/:doc',function(request, response) {
+  response.sendfile('coming-soon/' + request.params.doc);
+});
+
+app.get('/coming-soon/js/:doc',function(request, response) {
+  response.sendfile('coming-soon/js/' + request.params.doc);
+});
+
+app.get('/coming-soon/tools/:doc',function(request, response) {
+  response.sendfile('coming-soon/tools/' + request.params.doc);
+});
+
+app.get('/coming-soon/images/:doc',function(request, response) {
+  response.sendfile('coming-soon/images/' + request.params.doc);
+});
+
+// Start
 var port = process.env.PORT || 8080;
 app.listen(port, function() {
   console.log("Listening on " + port);
