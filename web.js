@@ -58,7 +58,7 @@ app.get('/coming-soon/images/:doc',function(request, response) {
 });
 
 // Start
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 80;
 app.listen(port, function() {
   console.log("Listening on " + port);
 });
